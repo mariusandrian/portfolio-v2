@@ -1,0 +1,180 @@
+@import "../colors.scss";
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+
+  .hero-namecard {
+    min-width: 200px;
+    padding-right: 100px;
+  }
+
+  .name-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .name-subtitle {
+    color: $secondary-text;
+    padding-top: 8px;
+    font-size: 20px;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    img {
+      width: 30px;
+      padding-right: 10px;
+    }
+  }
+
+  .statement-container {
+    .paragraph {
+      padding-bottom: 20px;
+      line-height: 1.3;
+    }
+  }
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .sub {
+    color: $secondary-text;
+    padding-bottom: 20px;
+  }
+
+  .project {
+    font-weight: bold;
+  }
+
+  .desc {
+    padding-bottom: 20px;
+  }
+
+  .chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px 0;
+    .chip-item {
+      padding: 2px 8px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      background-color: #cfffe3;
+      border-radius: 20px;
+    }
+  }
+}
+
+.list-item {
+  padding-left: 40px;
+  .title {
+    display: flex;
+    flex-direction: row;
+  }
+  .company {
+    padding-right: 20px;
+  }
+}
+
+code.inline {
+  background-color: $color-code-background;
+  color: $color-code-color;
+  border-radius: 0.3em;
+  padding: 2px 3px 4px;
+  white-space: nowrap;
+}
+
+.logo {
+  opacity: 0.5;
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.4s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.linkedin img {
+  width: 50px;
+}
+.github img {
+  width: 30px;
+}
+
+.download-btn {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+
+  .button {
+    padding: 5px;
+    border: 1px solid $main-text;
+    width: 200px;
+    text-align: center;
+    color: $main-text;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    &:hover {
+      background-color: $hover-background;
+    }
+  }
+}
+
+.linkedin {
+  padding-bottom: 20px;
+}
+
+.github {
+  padding-bottom: 20px;
+}
+
+.link {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  border-bottom: 3px solid #5fc087;
+  color: #237645;
+
+  &:hover {
+    border-bottom: 3px solid #104a28;
+    color: #104a28;
+  }
+
+  &:visited {
+    color: #237645;
+  }
+}
+
+.footer {
+  .trademark {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  border-top: 1px solid $footer-line;
+}
+
+.inactive-text {
+  color: $inactive-text;
+}
