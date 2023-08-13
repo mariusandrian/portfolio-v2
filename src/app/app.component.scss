@@ -7,6 +7,8 @@
 
 .content {
   max-width: 700px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -177,4 +179,20 @@ code.inline {
 
 .inactive-text {
   color: $inactive-text;
+}
+
+@media only screen and (max-width: 320px) {
+  .content {
+    max-width: 320px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .content {
+    max-width: 480px;
+  }
+  .hero {
+    margin-top: 100px;
+    flex-direction: column;
+  }
 }
